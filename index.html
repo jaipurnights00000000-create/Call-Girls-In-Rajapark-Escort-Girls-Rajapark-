@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaipur Nights | Luxury Experiences</title>
+<meta name="description" content="Discover premium hospitality, stays and experiences in Jaipur.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #090909;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b99750;
+  background: #090909;
+}
+
+.logo {
+  color: #e6c477;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+nav a:hover { color: #e6c477; }
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background:
+  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+  url("https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=1800") center/cover;
+}
+
+.hero-content { max-width: 800px; }
+
+.small-title {
+  color: #e6c477;
+  letter-spacing: 5px;
+  font-size: 13px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(45px,8vw,85px);
+  margin: 25px 0;
+  font-weight: normal;
+}
+
+h1 span { color: #e6c477; }
+
+.hero p {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 32px;
+  background: #d6b36a;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn:hover { background: #f0d99f; }
+
+section { padding: 85px 7%; }
+
+.heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.heading h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #e6c477;
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.heading p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #151515;
+  border: 1px solid #44371e;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #e6c477;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content { padding: 25px; }
+
+.card h3 {
+  color: #e6c477;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.about {
+  background: #121212;
+  text-align: center;
+  border-top: 1px solid #44371e;
+  border-bottom: 1px solid #44371e;
+}
+
+.about p {
+  max-width: 750px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  color: #e6c477;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #aaa;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+footer {
+  background: #050505;
+  border-top: 1px solid #44371e;
+  text-align: center;
+  padding: 28px 15px;
+  color: #999;
+  font-size: 13px;
+}
+
+@media(max-width:750px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a { margin: 0; }
+
+  .hero { min-height: 520px; }
+
+  .cards { grid-template-columns: 1fr; }
+
+  section { padding: 60px 6%; }
+
+  .heading h2 { font-size: 34px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">JAIPUR NIGHTS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="small-title">WELCOME TO THE PINK CITY</div>
+    <h1>Experience <span>Jaipur</span></h1>
+    <p>
+      Discover premium hospitality, beautiful stays
+      and unforgettable local experiences.
+      Your Jaipur journey starts here.
+    </p>
+    <a href="#contact" class="btn">CONTACT US</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="heading">
+    <div class="small-title">DISCOVER OUR WORLD</div>
+    <h2>Our Experiences</h2>
+    <p>Explore comfort, hospitality and the beauty of Jaipur.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900" alt="Luxury hotel">
+      <div class="card-content">
+        <h3>Premium Stays</h3>
+        <p>Explore comfortable accommodation
+        and beautiful hospitality spaces.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900" alt="Restaurant">
+      <div class="card-content">
+        <h3>Dining & Lifestyle</h3>
+        <p>Discover wonderful dining places,
+        cafés and Jaipur nightlife.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=900" alt="Jaipur palace">
+      <div class="card-content">
+        <h3>Jaipur Experiences</h3>
+        <p>Explore heritage, architecture,
+        shopping and local culture.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="heading">
+    <div class="small-title">OUR STORY</div>
+    <h2>About Jaipur Nights</h2>
+  </div>
+  <p>
+    Jaipur Nights is a premium hospitality and
+    local experience brand inspired by the beauty
+    and culture of Rajasthan. We believe in comfort,
+    quality and memorable experiences.
+    Discover Jaipur with elegance and style.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="small-title">GET IN TOUCH</div>
+  <h2>Let's Connect</h2>
+  <p>
+    Have a question or enquiry?
+    Contact us for more information.
+  </p>
+
+  <!-- Change this email to your real business email -->
+  <a class="btn"
+     href="mailto:hello@example.com?subject=Jaipur%20Nights%20Enquiry">
+     EMAIL US
+  </a>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Jaipur Nights.
+  All Rights Reserved. | Jaipur, Rajasthan
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
